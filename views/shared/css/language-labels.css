@@ -1,0 +1,138 @@
+/* Language Labels */
+
+:root {
+    --language-label-bg: #1f2933;
+    --language-label-fg: #ffffff;
+}
+
+.language-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 6px 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.4;
+}
+
+.language-labels[hidden] {
+    display: none;
+}
+
+/* Font family and weight come from the theme. No letter-spacing: it breaks
+   Hebrew points and joining scripts. */
+.language-label {
+    display: inline-block;
+    margin: 0;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: var(--language-label-bg);
+    color: var(--language-label-fg);
+    font-size: 1em;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+/*
+ * Colour by language: the base colour rotated by --language-label-offset.
+ * The plain rule is a fallback from precomputed H/S/L. The relative-colour
+ * rules follow the live base colour; they must stay inside @supports, since an
+ * unsupported declaration using var() would otherwise leave labels transparent.
+ */
+.language-labels--auto .language-label {
+    background: hsl(
+        calc(var(--language-label-base-h, 168) + var(--language-label-offset, 0)),
+        var(--language-label-base-s, 55%),
+        var(--language-label-base-l, 65%)
+    );
+    color: hsl(
+        calc(var(--language-label-base-h, 168) + var(--language-label-offset, 0)),
+        60%,
+        var(--language-label-base-fg-l, 16%)
+    );
+}
+
+@supports (background: hsl(from red calc(h + 1) s l)) {
+    .language-labels--auto .language-label {
+        background: hsl(from var(--language-label-base) calc(h + var(--language-label-offset, 0)) s l);
+    }
+}
+
+/* Dark text on light colours, white on dark. */
+@supports (color: hsl(from red h s clamp(16, calc((55 - l) * 1000), 100))) {
+    .language-labels--auto .language-label {
+        color: hsl(from var(--language-label-base) calc(h + var(--language-label-offset, 0)) s clamp(16, calc((55 - l) * 1000), 100));
+    }
+}
+
+.language-labels .language-label--more {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/* Screen-reader-only full name. */
+.language-label__sr {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* Overlay: the script sets left/top/width/height to match the image. */
+.language-labels-host {
+    position: relative;
+}
+
+.language-labels--overlay {
+    position: absolute;
+    z-index: 2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    align-content: flex-start;
+    pointer-events: none; /* Clicks reach the thumbnail link. */
+    visibility: hidden;   /* Until the image can be measured. */
+}
+
+.language-labels--overlay.language-labels--placed {
+    visibility: visible;
+}
+
+.language-labels--overlay .language-label {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/*
+ * Fixed corners set the list's direction so labels pack from that side on any
+ * page. Each label is dir="auto", so its own text direction is unaffected.
+ * auto-* corners inherit the page direction.
+ */
+.language-labels--overlay.language-labels--top-left,
+.language-labels--overlay.language-labels--bottom-left {
+    direction: ltr;
+}
+
+.language-labels--overlay.language-labels--top-right,
+.language-labels--overlay.language-labels--bottom-right {
+    direction: rtl;
+}
+
+.language-labels--overlay.language-labels--bottom-left,
+.language-labels--overlay.language-labels--bottom-right,
+.language-labels--overlay.language-labels--auto-bottom {
+    align-content: flex-end;
+}
+
+/* Small thumbnails. */
+.language-labels--overlay.language-labels--compact {
+    padding: 2px;
+    gap: 2px;
+}
+
+.language-labels--compact .language-label {
+    padding: 0 3px;
+    font-size: 0.75em;
+}

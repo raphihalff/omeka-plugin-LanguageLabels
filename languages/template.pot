@@ -1,0 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the LanguageLabels package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LanguageLabels 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 11:55-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: views/admin/plugins/language-labels-config-form.php:8
+msgid "Language element"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:11
+msgid "Element to read languages from. Separate several languages with separate texts, or with ; , or |."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:24
+msgid "Show as"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:27
+msgid "Codes and names are both recognised: \"fre\", \"fr\" and \"French\" are the same language. Unrecognised values are shown as entered."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:34
+msgid "Short code (EN, FR)"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:35
+msgid "Language name (English, French)"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:36
+msgid "Value as entered"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:44
+msgid "Position"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:47
+msgid "Corner of the thumbnail. Automatic positions use the side reading starts from: left on left-to-right pages, right on right-to-left pages."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:54
+msgid "Top left"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:55
+msgid "Top right"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:56
+msgid "Bottom left"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:57
+msgid "Bottom right"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:58
+msgid "Top (automatic)"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:59
+msgid "Bottom (automatic)"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:67
+msgid "Maximum labels"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:70
+msgid "Further languages collapse into a \"+N\" label. 0 for no limit."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:81
+msgid "Colour by language"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:84
+msgid "Give each language its own colour, derived from the base colour. When off, the label colours below are used."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:97
+msgid "Base colour"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:100
+msgid "A hex colour, or a theme CSS variable with a hex fallback, e.g. var(--primary-color, #76D7C4). Other languages get the same shade in different hues."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:113
+msgid "Base language"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:116
+msgid "Optional. Language shown in exactly the base colour, e.g. en or English."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:127
+msgid "Colour priority"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:130
+msgid "Comma-separated languages, most common first. Earlier languages get the most distinct colours."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:142
+msgid "Label colours"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:145
+msgid "Background and text hex colours, used when colour by language is off."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:161
+msgid "Custom labels"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:164
+msgid "One \"value = label\" per line; case-insensitive. An empty label hides the value, e.g. \"zxx =\"."
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:176
+msgid "Show in admin"
+msgstr ""
+
+#: views/admin/plugins/language-labels-config-form.php:179
+msgid "Also label thumbnails on the admin Browse Items page."
+msgstr ""
+
+#: views/shared/common/language-labels.php:17
+msgid "Languages"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Amharic"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Arabic"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Armenian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Basque"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Bengali"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Bulgarian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Catalan"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Chinese"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Croatian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Czech"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Danish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Dutch"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "English"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Esperanto"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Estonian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Finnish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "French"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Georgian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "German"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Greek"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Ancient Greek"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Hebrew"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Hindi"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Hungarian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Icelandic"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Indonesian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Irish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Italian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Japanese"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Korean"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Ladino"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Latin"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Latvian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Lithuanian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Malay"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Norwegian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Persian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Polish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Portuguese"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Romanian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Russian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Sanskrit"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Scottish Gaelic"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Serbian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Slovak"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Slovenian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Spanish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Swahili"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Swedish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Tamil"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Thai"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Turkish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Ukrainian"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Urdu"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Vietnamese"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Welsh"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Yiddish"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Multiple languages"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "Undetermined"
+msgstr ""
+
+#: LanguageLabelsPlugin.php
+msgid "No linguistic content"
+msgstr ""
