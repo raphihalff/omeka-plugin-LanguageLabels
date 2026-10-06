@@ -17,7 +17,7 @@ Omeka Classic 2.0 or later.
 ## Installation
 
 1. Download the latest release ZIP from the
-   [releases page](https://github.com/raphihalff/plugin-LanguageLabels/releases).
+   [releases page](https://github.com/raphihalff/omeka-plugin-LanguageLabels/releases).
 2. Unzip it into your Omeka `plugins/` folder. The folder must be named `LanguageLabels`.
 3. In the admin, go to **Plugins** and click **Install** next to Language Labels.
 
@@ -68,7 +68,7 @@ theme colour; older ones use values precomputed from the hex.
 ## Support
 
 Report issues at
-[github.com/raphihalff/plugin-LanguageLabels/issues](https://github.com/raphihalff/plugin-LanguageLabels/issues).
+[github.com/raphihalff/omeka-plugin-LanguageLabels/issues](https://github.com/raphihalff/omeka-plugin-LanguageLabels/issues).
 
 ## License
 
